@@ -6,18 +6,19 @@ I study why security findings don't get paid — and build the tooling that fixe
 
 ---
 
-**113 logged rejections. 78 of them — 69% — were preventable before I read a line of code.**
+**113 logged rejections. 63 of them — 55.8% — could have been stopped from the public record.**
 
 That number is the thesis. Most bug-bounty effort is not lost to hard bugs. It is lost to findings
-that were dead on arrival — duplicates, excluded roles, prior audits, payout floors — all knowable
-*before* anyone opens an editor.
+that were dead on arrival — known issues, exclusion clauses, prior audits, payout floors — all on
+the public record once the finding is in hand, before the proof of concept. Nine more could have
+been stopped only from my own log.
 
 So I logged every rejection I ever got, classified each one by the gate that should have caught it,
 and built the gates.
 
 | Repo | What it is |
 |---|---|
-| **[rejection-taxonomy](https://github.com/KhomDev/rejection-taxonomy)** | 113 real rejections — **what the bug was**, why it failed, and the earliest gate that could have caught it. The dataset behind the 69%. |
+| **[rejection-taxonomy](https://github.com/KhomDev/rejection-taxonomy)** | 113 real rejections — **what the bug was**, why it failed, and the earliest gate that could have caught it. The dataset behind the 55.8%. |
 | **[bounty-economics](https://github.com/KhomDev/bounty-economics)** | Payout-tier and exclusion-clause taxonomies as data, plus a validator for your own private program ledger. |
 | **[viability-gate](https://github.com/KhomDev/viability-gate)** | Rust CLI scoring a draft finding against 22 rejection anti-patterns and 7 pre-hunt gates. Offline, deterministic, no API key. |
 | **[realism-gate](https://github.com/KhomDev/realism-gate)** | Rust CLI that reads a Foundry PoC and flags what makes a passing test prove less than it claims — privileged pranks, state written with cheatcodes, assertions that cannot fail. 14 rules, measured on 886 public exploit reproductions. |
@@ -71,7 +72,10 @@ value counted wrong and input trusted when it should not be.
 | Test-suite intention grep | 1 |
 | Headline-vs-evidence mismatch | 1 |
 
-**The six pre-hunt gates account for 78 of 113.** All runnable before you open an editor.
+**78 of 113 have D1 or G1–G5 as their earliest gate.** That is not the share
+they would have stopped: it includes duplicates with no public signal, one filed at the same time
+as mine, and withheld rows, and every gate needs the finding in hand. The preventable share is the
+63 above.
 
 The three rows that died at the realism gates are the ones that hurt most: the bug was real, and
 the proof of concept proved something the attacker could not do. That is what
