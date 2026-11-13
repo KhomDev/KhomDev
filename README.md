@@ -14,14 +14,15 @@ the public record once the finding is in hand, before the proof of concept. Nine
 been stopped only from my own log.
 
 So I logged every rejection I ever got, classified each one by the gate that should have caught it,
-and built the gates.
+and built two tools, one for each question a report has to answer:
 
-| Repo | What it is |
-|---|---|
-| **[rejection-taxonomy](https://github.com/KhomDev/rejection-taxonomy)** | 113 real rejections — **what the bug was**, why it failed, and the earliest gate that could have caught it. The dataset behind the 55.8%. |
-| **[bounty-economics](https://github.com/KhomDev/bounty-economics)** | Payout-tier and exclusion-clause taxonomies as data, plus a validator for your own private program ledger. |
-| **[viability-gate](https://github.com/KhomDev/viability-gate)** | Rust CLI scoring a draft finding against 22 rejection anti-patterns and 7 pre-hunt gates. Offline, deterministic, no API key. |
-| **[realism-gate](https://github.com/KhomDev/realism-gate)** | Rust CLI that reads a Foundry PoC and flags what makes a passing test prove less than it claims — privileged pranks, state written with cheatcodes, assertions that cannot fail. 14 rules, measured on 886 public exploit reproductions. |
+| Tool | The question | What you get |
+|---|---|---|
+| **[priorart](https://github.com/KhomDev/priorart)** | *Is it new, in scope, and payable?* | An offline dossier of the program's known issues, prior audits, exclusion clauses and payout tiers, and for each finding the prior items to read, with quotes and page numbers. Retrieval only: its benchmark missed my own 30% false-alarm bar, so it never says "duplicate". The 113-rejection dataset lives in it. |
+| **[realism-gate](https://github.com/KhomDev/realism-gate)** | *Does the proof prove the claim?* | A static check of Foundry, Solana and Move PoCs (20 rules) and, since 1.0, of the report: each claim comes back `SHOWN`, `NOT SHOWN`, `CONTRADICTED` or `NOT CHECKABLE`. Claim binding measured 91% on its first run over 120 public PoC + report pairs. |
+
+Until 12 November these were four repositories. viability-gate is now priorart (old links redirect);
+bounty-economics and rejection-taxonomy are archived, and their data moved into priorart.
 
 ---
 
@@ -79,7 +80,7 @@ as mine, and withheld rows, and every gate needs the finding in hand. The preven
 
 The three rows that died at the realism gates are the ones that hurt most: the bug was real, and
 the proof of concept proved something the attacker could not do. That is what
-[realism-gate](https://github.com/KhomDev/realism-gate) now checks before I submit.
+[realism-gate](https://github.com/KhomDev/realism-gate) now checks before I submit, claim by claim.
 
 ---
 
@@ -104,5 +105,5 @@ harnesses, and adversarial validation — because the gates above only work if s
 - Writing — [Paragraph](https://paragraph.com/@yuriykhomenkov@gmail.com)
 - X — [@YKhomenkov](https://x.com/YKhomenkov)
 
-If you are a researcher: the data is free, and the taxonomy is the part worth stealing.
+If you are a researcher: the data is free, and both tools run offline with no account.
 If you are a team: I am available for scoped review, and I will tell you what I could not break.
