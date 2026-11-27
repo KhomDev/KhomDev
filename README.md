@@ -85,11 +85,6 @@ I pin scope to a commit, try to break the invariants the protocol depends on, an
   <img alt="EVM" src="https://img.shields.io/badge/EVM-0c0b0a?style=for-the-badge&logo=ethereum&logoColor=f4f0e8" />
 </p>
 
-<div align="center">
-  <img height="160" alt="KhomDev GitHub stats" src="https://github-readme-stats.vercel.app/api?username=KhomDev&show_icons=true&hide_border=true&title_color=ff6a5c&icon_color=e23b32&text_color=f4f0e8&bg_color=0c0b0a&ring_color=e23b32" />
-  <img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhomDev&layout=compact&hide_border=true&title_color=ff6a5c&text_color=f4f0e8&bg_color=0c0b0a" />
-</div>
-
 ---
 
 ## Elsewhere
