@@ -5,6 +5,10 @@
 
 <div align="center">
 
+<img src="assets/khomdev-banner.gif" alt="KhomDev: blockchain security engineer, DeFi audits. Solana, NEAR, EVM, Rust." width="1200" />
+
+**New:** [**Rugproof**](https://github.com/KhomDev/rugproof): a free Solana security path, from Rust basics to code that can't be rugged.
+
 <!--
   Hero banner (option 2, approved): custom still, 1200×400.
   Source: assets/banner.svg (Switzer embedded). Also assets/banner@2x.png.
@@ -36,12 +40,13 @@ Available for private audits · every finding proven on the real contracts
 
 ## Featured work
 
-Audit tools first, then the Vyper and NEAR work. All links below are public and verified.
+Audit tools first, then the Solana learning path, then the Vyper and NEAR work. All links below are public and verified.
 
 | Project | What it is | Links |
 | --- | --- | --- |
 | **[realism-gate](https://github.com/KhomDev/realism-gate)** | Does the proof prove the claim? A Rust CLI that reads Foundry, Solana and Move PoCs and binds each report claim to `SHOWN`, `NOT SHOWN`, `CONTRADICTED`, or `NOT CHECKABLE`. v1.4.0. | [GitHub](https://github.com/KhomDev/realism-gate) · [crates.io](https://crates.io/crates/realism-gate) |
 | **[priorart](https://github.com/KhomDev/priorart)** | Is it new, in scope, and payable? Offline dossiers from the program files you already saved — known issues, prior audits, exclusion clauses, payout tiers. Retrieval only: it never says “duplicate”. v0.2.2. The 113-rejection dataset lives here. | [GitHub](https://github.com/KhomDev/priorart) · [crates.io](https://crates.io/crates/priorart) |
+| **[Rugproof](https://github.com/KhomDev/rugproof)** | From Rust basics to code that can't be rugged. A free Solana security path in five guides: Rust, accounts and PDAs, Anchor internals, auditing and the Agave runtime, then 15 bug classes and real exploits (Wormhole, Cashio, Mango and more) with vulnerable code next to the fix. Tested Rust exercises. | [GitHub](https://github.com/KhomDev/rugproof) |
 | **[vyper-scales](https://github.com/KhomDev/vyper-scales)** | Open evidence tooling for Vyper: cross-contract seam coverage (`seamcheck`), compiler semantic diffs, and a signature compatibility matrix. Unparsed `extcall` / `raw_call` is `UNASSESSED`, not a silent skip. | [GitHub](https://github.com/KhomDev/vyper-scales) |
 | **[TriagePay](https://github.com/KhomDev/TriagePay)** | A policy wallet on NEAR for AI agents that pay per call (x402). The agent signs; the contract decides. Prompt-injected payees are refused on chain. | [GitHub](https://github.com/KhomDev/TriagePay) · [demo](https://triagepay-demo.vercel.app) |
 | **[Vibe Wallet](https://github.com/KhomDev/vibe-wallet)** | Talk to your NEAR wallet. Voice or text becomes a proposed transaction, limits in code check it, and nothing is signed until you confirm. Live on mainnet. | [GitHub](https://github.com/KhomDev/vibe-wallet) · [app](https://vibe-wallet-flame.vercel.app) |
